@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>NanaW</RootNamespace>
+    <AssemblyName>NanaW</AssemblyName>
+    <Title>NanaW上号器</Title>
+    <Product>NanaW上号器</Product>
+    <Copyright>Copyright (c) 2026 NanaW</Copyright>
+    <Company>shop.nw-s.lat</Company>
+    <Description>NanaW上号器</Description>
+    <FileDescription>NanaW上号器</FileDescription>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="icon.ico">
+      <LogicalName>NanaW.icon.ico</LogicalName>
+    </EmbeddedResource>
+    <Content Include="server.ini" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
